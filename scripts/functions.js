@@ -1,5 +1,4 @@
 //read and saving data in array
-
 let getSavedData = ()=> {
 
 
@@ -14,13 +13,11 @@ let getSavedData = ()=> {
 
 let savingData = (todos) => {
 
-
     //saving in the localstorage
     localStorage.setItem('todo', JSON.stringify(todos))
 }
 
 //rendering data in the browser
-
 //filtering todos when search and making new array of searched items
 const displayTodos = (todos, searchedTodos) => {
 
@@ -133,7 +130,6 @@ let changeCompletedData = (data) =>{
 
 //generating the text for incompletetodos
 let incompleteTodoText =  (incompleteTodos) => {
-
 
     const res = document.createElement('h3');
     res.textContent = `${incompleteTodos.length} todos left`;
