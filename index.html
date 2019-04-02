@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="icon" href="Icon/icon.png">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>To-do-App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-wrapper grey darken-1">
+            <a href="#" class="brand-logo center">Todo App <i class="material-icons large">check</i></a>
+        </div>
+    </nav>
+
+    <!-- Main Heading -->
+    <h1 class="center grey-text text-darken-2">Todos</h1>
+
+    <div class="container  z-depth-4 main">
+
+        <!-- Search Bar -->
+        <div class="row">
+            <form>
+                    <div class="input-field col s12 m10 lg12">
+                        <input placeholder="Search Your Todos..." id="searchTodo" type="text" class="validate">
+                        <label for="search_todo">Search</label>
+                    </div>
+
+                    <!-- Checkbox here -->
+                        <div class="col m2 s12">
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="checkbx" />
+                                    <span>HideCompleted</span>
+                                </label>
+                            </p>
+                        </div>
+                        <!-- Rendering Elements here -->
+                    <div class="col s12 m12 lg12">
+                        <div id="todoContents" class=" grey-text text-darken-2"></div>
+                    </div>  
+            </form>
+        </div>
+
+        <!-- Adding Todo here -->
+        <div class="row">
+            <div class="col m10 s10">
+
+                <form id="formSubmit">
+                    <input type="text" name="todo" placeholder="Add todos....">
+                </div>
+                    <div class="col m2 s2">
+
+                        <button class="btn-floating btn-large waves-effect waves-light"><i
+                            class="material-icons">add</i></button>
+                        </div>
+                </form>
+            
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/uuid.js"></script>
+<script src="scripts/functions.js"></script>
+<script src="scripts/todo.js"></script>
+
+</html>
