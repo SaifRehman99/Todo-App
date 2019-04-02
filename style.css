@@ -9,3 +9,17 @@
 .btnn{
     margin-left: 70px;
 }
+@media(max-width:450px){
+    .main{
+        padding: 20px;
+    }
+    .gap{
+        padding-left: 25px !important;
+        color: black;
+        font-size: 15px !important;
+    }
+    .btnn{
+        margin-left: 50px;
+    }
+
+}
