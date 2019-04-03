@@ -9,6 +9,10 @@
 .btnn{
     margin-left: 70px;
 }
+/* adding line through when checked */
+.line{
+    text-decoration: line-through !important;
+}
 @media(max-width:450px){
     .main{
         padding: 20px;

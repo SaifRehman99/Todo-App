@@ -68,7 +68,11 @@ let generatingDOM = (item) => {
     chckBox.setAttribute('type', 'checkbox');
 
     //if todo is complete, tick the todo with a tick mark
-    chckBox.checked = item.completed;
+    // chckBox.checked = item.completed;
+    if(chckBox.checked = item.completed){
+        p.classList.add('line')
+    }
+    // chckBox.classList.add('text-decoration: line-through;')
     div.classList.add('divv')
     div.appendChild(chckBox);
 
